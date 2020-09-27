@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  />
+</head>
+<body>
+    <div class="tip-calculator">
+        <h1 id="tip-calculator">TIP CALCULATOR</h1>
+    </div>
+    <div id="main-box">
+    
+       
+        <div>
+            <h3>How much was your bill ?</h3>
+            $<input id="bill_amount" type="number" value="Bill amount"><br><br>
+
+            <h3>How was your service ?</h3>
+            <select name="service" id="service">
+                <option id="1" value="1">Very Good</option>
+                <option id="2" value="2">Good</option>
+                <option id="3" value="3">It was okay</option>
+                <option id="4" value="4">Bad</option>
+              </select><br><br>
+
+             <h3>How many peaople are sharing the bill</h3>
+             <input id="peaople" type="number" value="Number of peaople">peaople <br>
+             <br>
+              <div class="wrapper">
+                <button onclick="calculate()" class="btn btn-danger btn-lg mt-4 mx-auto d-block sort-btn" id="calculate">CALCULATE</button>
+              </div>
+            
+
+
+        </div>
+        
+        <p>Total:</p>
+        <span class="result"></span><br>
+        <p>Per head to pay:</p>
+        <span class="per-head"></span>
+    
+
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
